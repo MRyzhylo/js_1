@@ -1,0 +1,13 @@
+#images_block {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+}
+
+#images_block img {
+    max-width: 25%;
+    margin: 15px;
+    border: 1px solid black;
+}
