@@ -12,18 +12,17 @@
 
     <body>
         <div id="nav_block">
-            <input type="number" value="1" />
-            <button type="button">Prev</button>
-            <button type="button">Next</button>
-            <select>
+            <input id="page_num" type="number" value="1" />
+            <button id="btn_prev" type="button">Prev</button>
+            <button id="btn_next" type="button">Next</button>
+            <select id="page_limit">
                 <option>6</option>
-                <option>12</option>
-                <option>18</option>
-                <option>24</option>
+                <option>10</option>
+                <option>20</option>
                 <option>30</option>
             </select>
         </div>
-        <div id="images_block">
+        <div id="images_block" class="loading">
 
         </div>
     </body>
