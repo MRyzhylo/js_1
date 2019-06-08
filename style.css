@@ -4,10 +4,47 @@
     max-width: 1400px;
     margin: auto;
     justify-content: center;
+    box-shadow: 0 0 2px 3px black;
+    margin-top: 30px;
+    padding: 15px;
+    min-height: 600px;
+    position: relative;
+}
+
+.loading::before {
+    content: "Loading...";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #dddddded;
+    z-index: 5;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 50px;
+    transition: 0.5s;
 }
 
 #images_block img {
     max-width: 25%;
     margin: 15px;
     border: 1px solid black;
+}
+
+#nav_block {
+    max-width: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav_block button, select, input {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#nav_block input {
+    max-width: 50px;
+    text-align: center;
 }

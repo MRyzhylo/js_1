@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
-</head>
-<body>
-    <div id="images_block">
 
-    </div>
-</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="main.js"></script>
+    </head>
+
+    <body>
+        <div id="nav_block">
+            <input id="page_num" type="number" value="1" />
+            <button id="btn_prev" type="button">Prev</button>
+            <button id="btn_next" type="button">Next</button>
+            <select id="page_limit">
+                <option>6</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+            </select>
+        </div>
+        <div id="images_block" class="loading">
+
+        </div>
+    </body>
+
 </html>
